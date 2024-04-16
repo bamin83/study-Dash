@@ -1,0 +1,11 @@
+{
+    "recommendations": [
+        "njpwerner.autodocstring",
+        "donjayamanne.githistory",
+        "mhutchie.git-graph",
+        "ms-ceintl.vscode-language-pack-ja",
+        "charliermarsh.ruff",
+        "vscode-icons-team.vscode-icons",
+        "adam-bender.commit-message-editor"
+    ]
+}

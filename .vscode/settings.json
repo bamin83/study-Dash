@@ -1,0 +1,131 @@
+{
+    "[python]": {
+        "editor.formatOnSaveMode": "file",
+        "editor.formatOnSave": true,
+        "editor.defaultFoldingRangeProvider": "ms-python.black-formatter",
+        "editor.defaultFormatter": "ms-python.black-formatter",
+      },
+    "commit-message-editor.staticTemplate": [
+        "feat: Short description",
+        "",
+        "Message body",
+        "",
+        "Message footer"
+    ],
+    "commit-message-editor.dynamicTemplate": [
+        "{type}{scope}: {description}",
+        "",
+        "{body}",
+        "",
+        "{breaking_change}{footer}"
+    ],
+    "commit-message-editor.tokens": [
+        {
+            "label": "Type",
+            "name": "type",
+            "type": "enum",
+            "options": [
+                {
+                    "label": "✨feat",
+                    "value": "✨",
+                    "description": "新機能の追加"
+                },
+                {
+                    "label": "⚡update",
+                    "value": "⚡",
+                    "description": "既存機能の更新/改良"
+                },
+                {
+                    "label": "🐛fix",
+                    "value": "🐛",
+                    "description": "バグ修正"
+                },
+                {
+                    "label": "🩹adhesive_bandage",
+                    "value": "🩹",
+                    "description": "軽微なバグ修正"
+                },
+                {
+                    "label": "📚docs",
+                    "value": "📚",
+                    "description": "ドキュメントの作成"
+                },
+                {
+                    "label": "♻️refactor",
+                    "value": "♻️",
+                    "description": "リファクタリング"
+                },
+                {
+                    "label": "🖊️style",
+                    "value": "🖊️",
+                    "description": "軽微な変更"
+                },
+                {
+                    "label": "🗑️remove",
+                    "value": "🗑️",
+                    "description": "削除"
+                },
+                {
+                    "label": "🚙move",
+                    "value": "🚙",
+                    "description": "移動"
+                },
+                {
+                    "label": "🚧WIP",
+                    "value": "🚧",
+                    "description": "作業途中"
+                },
+                {
+                    "label": "🎥example/demo",
+                    "value": "🎥",
+                    "description": "デモコード"
+                },
+                {
+                    "label": "🔧enviroment/tool",
+                    "value": "🔧",
+                    "description": "設定/ツールの変更"
+                }
+            ],
+            "description": "Type of changes"
+        },
+        {
+            "label": "Scope",
+            "name": "scope",
+            "description": "A scope may be provided to a commit’s type, to provide additional contextual information and is contained within parenthesis, e.g., \"feat(parser): add ability to parse arrays\".",
+            "type": "text",
+            "multiline": false,
+            "prefix": "(",
+            "suffix": ")"
+        },
+        {
+            "label": "Short description",
+            "name": "description",
+            "description": "Short description in the subject line.",
+            "type": "text",
+            "multiline": false
+        },
+        {
+            "label": "Body",
+            "name": "body",
+            "description": "Optional body",
+            "type": "text",
+            "multiline": true,
+            "lines": 5,
+            "maxLines": 10
+        },
+        {
+            "label": "Breaking change",
+            "name": "breaking_change",
+            "type": "boolean",
+            "value": "BREAKING CHANGE: ",
+            "default": false
+        },
+        {
+            "label": "Footer",
+            "name": "footer",
+            "description": "Optional footer",
+            "type": "text",
+            "multiline": true
+        }
+    ],
+}
